@@ -1,21 +1,36 @@
-import React from "react"
-import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import { graphql, StaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import PostCard from "../components/postCard";
 
-import "../style/normalize.css"
-import "../style/all.scss"
+import "../style/normalize.css";
+import "../style/all.scss";
 
 const ElementsPage = ({ data }, location) => {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = data.site.siteMetadata.title;
+  const posts = data.allMarkdownRemark.edges;
+  let postCounter = 0;
 
   return (
     <Layout title={siteTitle}>
-      <SEO
-        title="Elements"
-      />
+      <SEO title="Elements" />
+
+      <div className="post-feed">
+        {posts.map(({ node }) => {
+          postCounter++;
+          return (
+            <PostCard
+              key={node.fields.slug}
+              count={postCounter}
+              node={node}
+              postClass={`post`}
+            />
+          );
+        })}
+      </div>
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
@@ -365,99 +380,110 @@ const ElementsPage = ({ data }, location) => {
           <h2 id="code">Code</h2>
           <pre>
             <code>
-              i = <span style={{color: "rgb(191,90,242)"}}>0</span>;{"\n"}
-              {"\n"}<span style={{color: "rgb(10,132,255)"}}>while</span> (!deck.<span style={{color: "rgb(255,214,10)"}}>isInOrder</span>()) {"{"}
+              i = <span style={{ color: "rgb(191,90,242)" }}>0</span>;{"\n"}
               {"\n"}
-              {"    "}print <span style={{color: "rgb(50,215,75)"}}>'Iteration '</span> + i;{"\n"}
-              {"    "}deck.<span style={{color: "rgb(255,214,10)"}}>shuffle</span>();{"\n"}
+              <span style={{ color: "rgb(10,132,255)" }}>while</span> (!deck.
+              <span style={{ color: "rgb(255,214,10)" }}>
+                isInOrder
+              </span>()) {"{"}
+              {"\n"}
+              {"    "}print{" "}
+              <span style={{ color: "rgb(50,215,75)" }}>'Iteration '</span> + i;
+              {"\n"}
+              {"    "}deck.
+              <span style={{ color: "rgb(255,214,10)" }}>shuffle</span>();{"\n"}
               {"    "}i++;{"\n"}
               {"}"}
               {"\n"}
-              {"\n"}print <span style={{color: "rgb(50,215,75)"}}>'It took '</span> + i + <span style={{color: "rgb(50,215,75)"}}>' iterations to sort the deck.'</span>;
+              {"\n"}print{" "}
+              <span style={{ color: "rgb(50,215,75)" }}>'It took '</span> + i +{" "}
+              <span style={{ color: "rgb(50,215,75)" }}>
+                ' iterations to sort the deck.'
+              </span>
+              ;
             </code>
           </pre>
           <h2 id="grid-system">Grid system</h2>
           <div className="row">
             <div className="col-demo col-12">
-              <div>
-                12
-              </div>
+              <div>12</div>
             </div>
           </div>
           <div className="row">
             <div className="col-demo col-3">
-              <div>
-                3
-              </div>
+              <div>3</div>
             </div>
             <div className="col-demo col-9">
-              <div>
-                9
-              </div>
+              <div>9</div>
             </div>
           </div>
           <div className="row">
             <div className="col-demo col-6">
-              <div>
-                6
-              </div>
+              <div>6</div>
             </div>
             <div className="col-demo col-6">
-              <div>
-                6
-              </div>
+              <div>6</div>
             </div>
           </div>
           <div className="row">
             <div className="col-demo col">
-              <div>
-                auto
-              </div>
+              <div>auto</div>
             </div>
             <div className="col-demo col">
-              <div>
-                auto
-              </div>
+              <div>auto</div>
             </div>
             <div className="col-demo col">
-              <div>
-                auto
-              </div>
+              <div>auto</div>
             </div>
           </div>
           <div className="row">
             <div className="col-demo col">
-              <div>
-                auto
-              </div>
+              <div>auto</div>
             </div>
             <div className="col-demo col">
-              <div>
-                auto
-              </div>
+              <div>auto</div>
             </div>
             <div className="col-demo col">
-              <div>
-                auto
-              </div>
+              <div>auto</div>
             </div>
             <div className="col-demo col">
-              <div>
-                auto
-              </div>
+              <div>auto</div>
             </div>
           </div>
         </div>
       </article>
     </Layout>
-  )
-}
+  );
+};
 
 const indexQuery = graphql`
   query {
     site {
       siteMetadata {
         title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM D, YYYY")
+            title
+            description
+            tags
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 1360) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
       }
     }
     smallPic: file(
@@ -486,7 +512,7 @@ const indexQuery = graphql`
       }
     }
   }
-`
+`;
 
 export default props => (
   <StaticQuery
@@ -495,4 +521,4 @@ export default props => (
       <ElementsPage location={props.location} data={data} {...props} />
     )}
   />
-)
+);
