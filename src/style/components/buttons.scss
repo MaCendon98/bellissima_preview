@@ -102,13 +102,9 @@ input[type="button"].primary,
 button.primary,
 .button.primary {
   /* color: #fff !important; */
-  color: $color-base !important;
+  color: $color-base-light !important;
   background-color: $color-primary;
   box-shadow: none;
-  @include light-mode {
-    color: $color-base-light !important;
-    background-color: $color-primary-light;
-  }
 }
 
 input[type="submit"].primary:hover,
