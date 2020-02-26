@@ -563,12 +563,19 @@ body {
   max-width: 720px;
   margin: 0 auto;
   padding: 6vw 0;
+  @media (max-width: 800px) {
+    padding: 60px 0;
+  }
 }
 
 .post-content-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 800px) {
+    align-items: flex-start;
+    padding-bottom: 10px;
+  }
 }
 
 .post-content-title {
@@ -585,9 +592,11 @@ body {
   text-align: center;
   opacity: 0.7;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .post-content-excerpt {
     font-size: 1.8rem;
+    text-align: left;
+    padding-bottom: 20px;
   }
 }
 
@@ -599,6 +608,9 @@ body {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   transform: translateX(calc(50vw - 50%));
+  @media (max-width: 800px) {
+    padding-bottom: 20px;
+  }
 }
 
 .post-content-body {
@@ -694,7 +706,7 @@ body {
 }
 
 .post-content-body hr {
-  margin: 6vw 0;
+  margin: 3vw 0;
 }
 
 .footnotes-sep {
@@ -759,4 +771,32 @@ body {
 .page-template .post-content-body h2,
 .page-template .post-content-body h3 {
   text-align: center;
+}
+
+/* Accordeon
+/* ---------------------------------------------------------- */
+
+details {
+  height: 200%;
+}
+
+summary {
+  padding: 20px 10px 20px 0;
+  font-size: 2.6rem;
+  line-height: 1.4;
+  font-weight: 700;
+  transition: padding-left cubic-bezier(0, 0.4, 0.11, 1.15) 0.2s;
+  @media (max-width: 500px) {
+    font-size: 2rem;
+  }
+  &:hover {
+    padding-left: 5px;
+    cursor: pointer;
+    @media (max-width: 1050px) {
+      padding-left: 0px;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
 }
