@@ -16,7 +16,10 @@ const ElementsPage = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="Behandlungen" />
+      <SEO
+        title="Behandlungen"
+        keywords={[`nagelstudio`, `kosmetikstudio`, `hannover`, `behandlungen`]}
+      />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
@@ -64,7 +67,6 @@ const indexQuery = graphql`
             date(formatString: "MMMM D, YYYY")
             title
             description
-            tags
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 1360) {

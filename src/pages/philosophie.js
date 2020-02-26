@@ -13,10 +13,7 @@ const Philosophie = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO
-        title="Philosophie"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-      />
+      <SEO title="Philosophie" keywords={[`philosophie`, `ueber-uns`]} />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">

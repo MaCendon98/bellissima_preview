@@ -18,7 +18,7 @@ const BlogIndex = ({ data }, location) => {
     <Layout title={siteTitle}>
       <SEO
         title="Start"
-        keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
+        keywords={[`nagelstudio`, `kosmetikstudio`, `hannover`]}
       />
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (
@@ -87,7 +87,6 @@ const indexQuery = graphql`
             date(formatString: "MMMM D, YYYY")
             title
             description
-            tags
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 1360) {

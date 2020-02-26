@@ -1,7 +1,6 @@
 ---
 title: Hautanalyse
 date: "2020-02-21"
-tags: [blue, color]
 thumbnail: ./hautanalyse.jpg
 description: Wir stimmen Hautpflegekonzepte individuell auf die Bedürfnisse Ihrer Haut ab!
 ---

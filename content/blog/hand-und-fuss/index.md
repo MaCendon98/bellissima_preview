@@ -1,7 +1,6 @@
 ---
 title: Haut und Fuß
 date: "2020-02-21"
-tags: [blue, color]
 thumbnail: ./hand-fuss.jpg
 description:
 ---

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import Tags from "./tag";
 
 export default props => (
   <article
@@ -26,9 +25,6 @@ class ContentNoImage extends Component {
     const { props } = this.props;
     return (
       <div className="post-card-content">
-        <div>
-          <Tags tags={props.node.frontmatter.tags} />
-        </div>
         <div>
           <Link to={props.node.fields.slug} className="post-card-link">
             <h2 className="post-card-title">

@@ -74,3 +74,31 @@ inkl. anitTox 120€
 </details>
 
 ---
+
+<details>
+<summary>Fruchtsäure Peeling</summary>
+
+Wie der Name schon sagt, Fruchtsäure ist Säure aus Früchten. Also ein natürlicher Wirkstoff, der z.B. in Äpfeln, Zitronen oder Oliven, aber auch in Milch oder Zuckerrohr zu finden ist. Fruchtsäurebehandlungen wählen wir zwischen drei Unterschiedlichen Fruchtsäurestärken, um perfekt zu Deiner Haut passende Stärke wählen zu können und für deine Haut das beste Ergebnis zu erzielen.
+
+##### Preis: Behandlung und Preise nach Absprache / Hautzustand
+
+</details>
+
+---
+
+<details>
+<summary>Micro Needling</summary>
+
+Das Microneedling ist ein Verfahren, bei dem die körpereigene Regeneration, zu einem schöneren, strafferen und ebenmäßigeren Hautbild verhilft.
+
+Mit der Hilfe von sehr kleinen und feinen Nadeln werden in die Haut winzige Kanäle gestochen. Diese kleinen Verletzungen werden vom Körper als Schädigungen wahrgenommen und es werden körpereigene „Maßnahmen zur Heilung“ eingeleitet. Die winzigen Verletzungen werden mit hauteigenen „Bausteinen“ verschlossen. Durch das vom eigenen Körper eingesetzte Kollagen und durch Hyaluronsäure wirkt die Wundheilung regenerierend auf das Hautbild. Die winzigen Verletzungen in der Hautoberfläche ermöglichen es, dass Cremes besser aufgenommen werden können und direkt in die Haut eindringen.
+
+Eine Behandlung durch Microneedling ist nahezu schmerzfrei. Es werden Rötungen nach der Ausführung auftreten. Diese zeugen von der starken Wirkung die Microneedling in der Haut erzeugt. Die Durchblutung steigt rasant an, damit die körpereigenen Bausteine an die Hautoberfläche gelangen, an denen das Microneedling eingesetzt wurde. Der körpereigene Heilungsprozess ist somit entfacht. Die Rötung vergeht innerhalb kurzer Zeit, in seltenen Fällen kann sie bis zu vier Tage andauern.
+
+Durch die Verletzungen werden Wachstumsfaktoren freigesetzt. Durch die Zellerneuerung und elastischen Baustoffen wird die Haut nach der Behandlung straffer und glatter. In mehreren wissenschaftlichen Studien ist die Wirksamkeit des Microneedling belegt und bewiesen worden. Die Untersuchungen des behandelten Gewebes ergaben, dass die neu gebildeten Zellen in der Haut eine Straffung bewirken. Nach einer Behandlung durch Microneedling sollten der Haut zwei Tage ruhe gegönnt werden.
+
+##### Preis: Behandlung und Preise nach Absprache / Hautzustand
+
+</details>
+
+---

@@ -36,10 +36,10 @@ const Layout = props => {
                 <Link to={`/behandlungen`}>Behandlungen</Link>
               </li>
               <li className="nav-tags" role="menuitem">
-                <Link to={`/tags`}>Schulungen</Link>
+                <Link to={`/schulungen`}>Schulungen</Link>
               </li>
               <li className="nav-tags" role="menuitem">
-                <Link to={`/tags`}>Kontakt</Link>
+                <Link to={`/kontakt`}>Kontakt</Link>
               </li>
             </ul>
           </nav>
