@@ -29,16 +29,16 @@ const Layout = props => {
           </a>
           <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
-              <li className="nav-about" role="menuitem">
+              <li className="nav-menuitem" role="menuitem">
                 <Link to={`/philosophie`}>Philosophie</Link>
               </li>
-              <li className="nav-elements" role="menuitem">
+              <li className="nav-menuitem" role="menuitem">
                 <Link to={`/behandlungen`}>Behandlungen</Link>
               </li>
-              <li className="nav-tags" role="menuitem">
+              <li className="nav-menuitem" role="menuitem">
                 <Link to={`/schulungen`}>Schulungen</Link>
               </li>
-              <li className="nav-tags" role="menuitem">
+              <li className="nav-menuitem" role="menuitem">
                 <Link to={`/kontakt`}>Kontakt</Link>
               </li>
             </ul>

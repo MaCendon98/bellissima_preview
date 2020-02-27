@@ -52,9 +52,9 @@ body {
   padding: 3vw;
   min-height: 100vh;
 }
-@media (max-width: 850px) {
+@media (max-width: 950px) {
   .site-wrapper {
-    padding: 6vw;
+    padding: 0 6vw 6vw 6vw;
   }
 }
 
@@ -131,14 +131,16 @@ body {
 .page-intro {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 4vw 0 2vw 0;
   max-width: 70%;
   margin: auto;
-  text-align: left;
+  text-align: center;
   @media (max-width: 500px) {
     max-width: 90%;
+    align-items: flex-start;
+    text-align: left;
   }
 }
 
@@ -159,7 +161,7 @@ body {
 .site-head {
   position: relative;
   z-index: 300;
-  margin-top: -10px;
+  // margin-top: -10px;
   font-size: 1.35rem;
 }
 
@@ -178,17 +180,25 @@ body {
   white-space: nowrap;
 }
 
+.site-head li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 .nav {
   display: flex;
   margin: 0 0 0 -12px;
   padding: 0;
   list-style: none;
-}
-
-.site-head li {
-  display: block;
-  margin: 0;
-  padding: 0;
+  @media (max-width: 950px) {
+    &-menuitem {
+      margin-top: 10px !important;
+      &:first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
 }
 
 .site-head-left a,
@@ -231,6 +241,7 @@ body {
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .social-links {
@@ -280,7 +291,7 @@ body {
   padding: 12px 12px 12px 0;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
   .site-head {
     padding: 0;
   }
@@ -290,11 +301,12 @@ body {
   .site-head-container {
     flex-direction: column;
     justify-content: flex-start;
-    height: 40px;
+    height: calc(30px + 46px);
     background: rgba(255, 255, 255, 0);
     z-index: -1;
     transition: all 0.4s ease-out;
     overflow: hidden;
+    padding-top: 30px;
   }
   .site-head-left,
   .site-head-right {
@@ -314,7 +326,7 @@ body {
     opacity: 0;
   }
   .site-head-right a {
-    padding: 5px 0;
+    padding: 10px 0;
     margin: 1px 0;
     font-size: 2rem;
   }
@@ -322,8 +334,8 @@ body {
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin: 3vw 0 0 0;
+    align-items: center;
+    margin: 12vw 0 0 0;
   }
   .site-head-left {
     order: 2;
@@ -341,7 +353,7 @@ body {
   .site-head-right {
     order: 3;
     width: 100%;
-    margin-top: 3vw;
+    margin-top: 12vw;
   }
   .social-links {
     flex-direction: column;
@@ -357,8 +369,10 @@ body {
   }
 
   .site-head-open .site-head-container {
-    height: 100vh;
+    // height: 100vh;
     transition: height 0.2s ease-in;
+    height: calc(100vh - 10px);
+    padding-top: 30px;
   }
 
   .site-head-open .site-head-left,
@@ -616,10 +630,12 @@ body {
 .post-content-body {
   font-size: 1.9rem;
   line-height: 1.65em;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .post-content-body {
     font-size: 1.7rem;
+    text-align: left;
   }
 }
 
@@ -771,6 +787,9 @@ body {
 .page-template .post-content-body h2,
 .page-template .post-content-body h3 {
   text-align: center;
+  @media (max-width: 500px) {
+    text-align: left;
+  }
 }
 
 /* Accordeon
