@@ -26,39 +26,45 @@ const Philosophie = ({ data }, location) => {
               fluid={data.benchAccounting.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>Ornella Galati-Rando und Giusy Magliari</figcaption>
+            <figcaption>Ornella Galati Rando und Giusy Magliari</figcaption>
           </figure>
-          <h3>Unsere Philosophie</h3>
-          <p>
-            Wir sorgen dafür, dass Sie sich wohlfühlen und mit unseren
-            verschiedenen Behandlungsangeboten das bestmögliche Resultat
-            erzielen.
-          </p>
-          <p>
-            Im Oktober 2008 haben wir gemeinsam unsere Ausbildung zur
-            Kosmetikerin, Visagistin und Wellness Beraterin in Hannover
-            erfolgreich abgeschlossen. Somit haben wir uns immer besser
-            optimieren und spezialisieren können. Regelmäßig besuchen wir
-            zahlreiche Fort- und Weiterbildungen sowie große Fachmessen, um für
-            Sie stets auf dem aktuellen Stand der Beauty & Kosmetologie zu sein.
-          </p>
-          <p>
-            Herkömmliche Behandlungen finden Sie bei uns nicht. Uns ist es
-            wichtig, speziell auf Ihren Hautzustand einzugehen und diesen
-            dauerhaft zu verbessern sowie den biologischen Alterungsprozess
-            Ihrer Haut verzögern zu können. Neueste Behandlungsmethoden sowie
-            apparative Kosmetik, wie Aquabrasion, Diamantabrasion, Bio-Face
-            Lifting, Ultraschall, Hyaluronic Treatments und vieles mehr runden
-            das Angebot ab. Die Behandlung im Institut und die tägliche Pflege
-            zu Hause ergeben eine Einheit.
-          </p>
-          <p>
-            Wir beraten Sie hinsichtlich Ihres persönlichen Pflegekonzepts und
-            stellen Ihnen die passenden Produkte vor. Nur gemeinsam können wir
-            sofort sichtbare Resultate mit Langzeitwirkung erzielen und Ihnen zu
-            einer gesünderen, jünger wirkenden Haut verhelfen.
-          </p>
-          <p>Wir freuen uns auf Ihren Anruf!</p>
+          <div className="post-content-body-left">
+            <h3>Unsere Philosophie</h3>
+            <p>
+              Wir sorgen dafür, dass Sie sich wohlfühlen und mit unseren
+              verschiedenen Behandlungsangeboten das bestmögliche Resultat
+              erzielen.
+            </p>
+            <p>
+              Im Oktober 2008 haben wir gemeinsam unsere Ausbildung zur
+              Kosmetikerin, Visagistin und Wellness Beraterin in Hannover
+              erfolgreich abgeschlossen. Somit haben wir uns immer besser
+              optimieren und spezialisieren können. Regelmäßig besuchen wir
+              zahlreiche Fort- und Weiterbildungen sowie große Fachmessen, um
+              für Sie stets auf dem aktuellen Stand der Beauty & Kosmetologie zu
+              sein.
+            </p>
+            <p>
+              Herkömmliche Behandlungen finden Sie bei uns nicht. Uns ist es
+              wichtig, speziell auf Ihren Hautzustand einzugehen und diesen
+              dauerhaft zu verbessern sowie den biologischen Alterungsprozess
+              Ihrer Haut verzögern zu können. Neueste Behandlungsmethoden sowie
+              apparative Kosmetik, wie Aquabrasion, Diamantabrasion, Bio-Face
+              Lifting, Ultraschall, Hyaluronic Treatments und vieles mehr runden
+              das Angebot ab. Die Behandlung im Institut und die tägliche Pflege
+              zu Hause ergeben eine Einheit.
+            </p>
+            <p>
+              Wir beraten Sie hinsichtlich Ihres persönlichen Pflegekonzepts und
+              stellen Ihnen die passenden Produkte vor. Nur gemeinsam können wir
+              sofort sichtbare Resultate mit Langzeitwirkung erzielen und Ihnen
+              zu einer gesünderen, jünger wirkenden Haut verhelfen.
+            </p>
+            <p>Wir freuen uns auf Ihren Anruf!</p>
+            <a href="tel:+4951139080588" className="button primary large">
+              Termin vereinbaren
+            </a>
+          </div>
         </div>
       </article>
     </Layout>

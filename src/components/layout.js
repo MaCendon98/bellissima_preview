@@ -35,9 +35,9 @@ const Layout = props => {
               <li className="nav-menuitem" role="menuitem">
                 <Link to={`/behandlungen`}>Behandlungen</Link>
               </li>
-              <li className="nav-menuitem" role="menuitem">
+              {/* <li className="nav-menuitem" role="menuitem">
                 <Link to={`/schulungen`}>Schulungen</Link>
-              </li>
+              </li> */}
               <li className="nav-menuitem" role="menuitem">
                 <Link to={`/kontakt`}>Kontakt</Link>
               </li>
@@ -77,7 +77,7 @@ const Layout = props => {
       </main>
       <footer className="site-foot">
         &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
-        Made by{" "}
+        <a href="/impressum"> Impressum</a> &mdash; Made by{" "}
         <a
           href="http://mattiacendon.de"
           target="_blank"

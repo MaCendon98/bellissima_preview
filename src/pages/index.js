@@ -26,11 +26,11 @@ const BlogIndex = ({ data }, location) => {
           <h1 className="page-head-title">
             {data.site.siteMetadata.description}
           </h1>
-          <h4 className="page-head-subtitle">
+          <h2 className="page-head-subtitle">
             Entspannen, Wohlfühlen, Genießen. <br />
             Bei uns bist du richtig.
-          </h4>
-          <a href="/" className="button primary large">
+          </h2>
+          <a href="tel:+4951139080588" className="button primary large">
             Termin vereinbaren
           </a>
         </header>
@@ -49,7 +49,7 @@ const BlogIndex = ({ data }, location) => {
         })}
       </div>
       <div className="page-intro post-content-body">
-        <h4>Entspannen, Wohlfühlen, Genießen.</h4>
+        <h4>Herzlich Willkommen auf unserer Webseite</h4>
         <p>
           Neue Technologien bereichern den Markt, um die Jugendlichkeit und
           Spannkraft der Haut zu erhalten. Die Welt der apparativen Kosmetik ist
