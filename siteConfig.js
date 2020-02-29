@@ -1,8 +1,7 @@
 module.exports = {
   name: "Bellissima Hannover",
   shortName: "",
-  description:
-    "Herzlich Willkommen in unserem Nagel- und Kosmetikstudio in Hannover.",
+  description: "Kosmetik- und Nagelstudio Bellissima Hannover",
   url: "https://www.bellissima-hannover.com", // Domain of your site without prefix!
   prefix: "/",
   author: "Mattia C",

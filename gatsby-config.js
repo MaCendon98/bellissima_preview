@@ -13,6 +13,34 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: "UA-99728303-1",
+          // Setting this parameter is optional
+          cookieName: "YOUR_CUSTOM_COOKIE_NAME", // default is gatsby-gdpr-google-analytics
+          anonymize: true // default is true
+        },
+        facebookPixel: {
+          pixelId: "YOUR_FACEBOOK_PIXEL_ID",
+          // Setting this parameter is optional
+          cookieName: "YOUR_CUSTOM_COOKIE_NAME" // default is gatsby-gdpr-facebook-pixel
+        },
+        // Defines the environments where the tracking should be available  - default is ["production"]
+        environments: ["production", "development"]
+      }
+    },
+
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Open Sans"]
+        }
+      }
+    },
+
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
