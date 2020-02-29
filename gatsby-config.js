@@ -17,7 +17,7 @@ module.exports = {
       options: {
         googleAnalytics: {
           // UA-99728303-1
-          trackingId: "YOUR_GOOGLE_ANALYTICS_ID",
+          trackingId: "UA-99728303-1",
           // Setting this parameter is optional
           cookieName: "YOUR_CUSTOM_COOKIE_NAME", // default is gatsby-gdpr-google-analytics
           anonymize: true // default is true
