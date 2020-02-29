@@ -1,13 +1,59 @@
 import React from "react";
 import { Link } from "gatsby";
+import CookieBanner from "react-cookie-banner";
 
 import logo from "../../content/assets/logo.svg";
 
 const Layout = props => {
   const { title, children } = props;
   const [toggleNav, setToggleNav] = React.useState(false);
+
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
+      <CookieBanner
+        message="Auch wir nutzen Cookies. Mit der weiteren Nutzung unserer Webseite geben Sie sich einverstanden. Um gegen diese zu widersprechen, rufen Sie die Impressum-Seite auf."
+        onAccept={() => {}}
+        cookie="user-has-accepted-cookies"
+        dismissOnScrollThreshold="10000"
+        buttonMessage="Okay"
+        styles={{
+          banner: {
+            backgroundColor: "#202323",
+            position: "fixed",
+            bottom: "0",
+            width: "100vw",
+            left: "0",
+            height: "auto",
+            textAlign: "left",
+            padding: "10px 20px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center"
+          },
+          button: {
+            position: "relative",
+            top: "initial",
+            right: "initial",
+            lineHeight: "initial",
+            marginTop: "initial",
+            padding: "inherit",
+            backgroundColor: "#f9ada0",
+            border: "inherit",
+            borderRadius: "0.5rem",
+            boxShadow: "inherit",
+            fontSize: "inherit",
+            fontWeight: "inherit",
+            color: "black",
+            cursor: "pointer"
+          },
+          message: {
+            fontWeight: 400,
+            lineHeight: "26px",
+            fontSize: "14px",
+            paddingRight: "20px"
+          }
+        }}
+      />
       <header className="site-head">
         <div id="menu" className="site-head-container">
           <a

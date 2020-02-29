@@ -17,8 +17,11 @@ const Impressum = ({ data }, location) => {
       <article className="post-content page-template no-image">
         <div className="post-content-body-left">
           <h1>Impressum</h1>
-          <a href="javascript:gaOptout();">Deactivate Google Analytics</a>
-
+          <p>
+            <a href="javascript:gaOptout();">
+              Hier klicken um Cookies zu deaktivieren.
+            </a>
+          </p>
           <p>
             Ornella Galati Rando und Giuseppa Giunta Magliari
             <br />

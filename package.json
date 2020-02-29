@@ -34,6 +34,7 @@
     "node-sass": "^4.13.1",
     "prismjs": "^1.16.0",
     "react": "^16.8.6",
+    "react-cookie-banner": "^4.1.0",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "typeface-alegreya": "^0.0.69",
