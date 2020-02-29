@@ -13,22 +13,16 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-gdpr-cookies`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        googleAnalytics: {
-          // UA-99728303-1
-          trackingId: "UA-99728303-1",
-          // Setting this parameter is optional
-          cookieName: "YOUR_CUSTOM_COOKIE_NAME", // default is gatsby-gdpr-google-analytics
-          anonymize: true // default is true
-        },
-        facebookPixel: {
-          pixelId: "YOUR_FACEBOOK_PIXEL_ID",
-          // Setting this parameter is optional
-          cookieName: "YOUR_CUSTOM_COOKIE_NAME" // default is gatsby-gdpr-facebook-pixel
-        },
-        // Defines the environments where the tracking should be available  - default is ["production"]
-        environments: ["production", "development"]
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-99728303-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true
       }
     },
 
