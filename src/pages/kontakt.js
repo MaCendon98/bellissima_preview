@@ -28,6 +28,7 @@ const Kontakt = ({ data }, location) => {
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9738.287060519562!2d9.766468!3d52.396313!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10393a28cb3136f8!2sBellissima%20Nails%20%26%20Cosmetics!5e0!3m2!1sde!2sde!4v1582974157773!5m2!1sde!2sde"
             frameborder="0"
             allowfullscreen=""
+            title="Google Maps"
           ></iframe>
         </div>
       </article>

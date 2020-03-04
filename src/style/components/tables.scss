@@ -6,11 +6,12 @@ table {
   margin: 0 0 $margin 0;
   width: 100%;
   font-size: 0.8em;
+  text-align: left;
 }
 
 th {
   color: $color-body-font;
-  font-size: 0.9em;
+  font-size: 1.1em;
   font-weight: $font-bold;
   padding: 0 0.7em 0.4em 0.7em;
   text-align: left;
@@ -23,7 +24,7 @@ td {
 }
 
 td:first-child {
-  border-left-width: 1px;
+  border-left-width: 0;
 }
 
 tbody tr {
@@ -44,6 +45,7 @@ tbody td {
   border: solid 1px $color-border;
   border-left-width: 0;
   border-top-width: 0;
+  border-right-width: 0;
 }
 
 tfoot {

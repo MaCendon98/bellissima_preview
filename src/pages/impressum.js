@@ -18,7 +18,10 @@ const Impressum = ({ data }, location) => {
         <div className="post-content-body-left">
           <h1>Impressum</h1>
           <p>
-            <a href="javascript:gaOptout();">
+            <a
+              href="javascript:gaOptout();"
+              onclick="alert('Google Analytics wurde deaktiviert');"
+            >
               Hier klicken um Cookies zu deaktivieren.
             </a>
           </p>
