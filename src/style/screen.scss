@@ -634,6 +634,8 @@ body {
   text-align: center;
   &-left {
     text-align: left;
+    font-size: 1.9rem;
+    line-height: 1.65em;
   }
 }
 @media (max-width: 500px) {
