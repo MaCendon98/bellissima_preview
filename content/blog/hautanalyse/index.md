@@ -21,3 +21,5 @@ die kostenlose Hautberatung bei Bellissima nails & cosmetic einen hohen Stellenw
 
 Kosmetika, die Ihre Haut gesund pflegen und Sie gleichzeitig aufgrund der angenehmen kosmetischen Eigenschaften “verwöhnen”.
 Eine der wichtigsten Rolle spielt die adäquate Hautreinigung, dadurch können erst die Wirkstoffe in der Haut arbeiten.
+
+<a class="button primary large" href="https://hauttest.picbe.de/public/pid/2856" target="_blank">Zur Hautberatung</a>

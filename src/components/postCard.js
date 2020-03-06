@@ -27,9 +27,9 @@ class ContentNoImage extends Component {
       <div className="post-card-content">
         <div>
           <Link to={props.node.fields.slug} className="post-card-link">
-            <h2 className="post-card-title">
+            <h3 className="post-card-title">
               {props.node.frontmatter.title || props.node.fields.slug}
-            </h2>
+            </h3>
           </Link>
         </div>
         <div className="post-card-date">{props.node.frontmatter.date}</div>
@@ -57,9 +57,9 @@ class ContentWithImage extends Component {
     return (
       <Link to={props.node.fields.slug} className="post-card-link">
         <div className="post-card-content">
-          <h2 className="post-card-title">
+          <h3 className="post-card-title">
             {props.node.frontmatter.title || props.node.fields.slug}
-          </h2>
+          </h3>
         </div>
       </Link>
     );
