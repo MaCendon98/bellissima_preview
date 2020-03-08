@@ -5,8 +5,6 @@ thumbnail: ./kosmetik.jpg
 description: Ihre Kosmetik Behandlung wird von uns nach einem ausführlichen Beratungsgespräch und einer eingehenden Hautanalyse individuell für Sie und Ihren persönlichen Bedürfnisse abgestimmt.
 ---
 
-Ihr individuelles Pflegeprogramm ist voller xxxxxx Wirkstoffe. Somit können wir gemeinsam Ihr perfektes Hautbild erarbeiten.
-
 Sie wünschen sich langfristige und sichtbare Erfolge?
 
 Dann sollten sie zwei wichtige Voraussetzungen für eine frische, schöne und strahlende Haut beachten:
