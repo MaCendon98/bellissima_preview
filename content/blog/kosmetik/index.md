@@ -83,7 +83,7 @@ Lippen sind heute ein besonderes Schönheitsmerkmal und gehören zu den meist ve
 
 Durch ein oberflächliches Schattieren der Farbe findet kein Traume auf den Lippen statt, sodass den Lippen eine perfekte Abheilung gehwährleistet werden kann. Vor allem bleibt das Picment stabil in den Lippen und heilt positiv ab. Das Farbpigment entwickelt sich positiv und wird nach weiterer Nacharbeit. immer schöner.
 
-##### Wie lange halten Aquarell Lips?
+##### Wie lange dauert die Abheilung der Aquarell Lips?
 
 **Ca. 4 - 5 Tage**
 

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "gatsby": "^2.19.19",
+    "gatsby-cli": "^2.10.4",
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-feed": "^2.2.0",
     "gatsby-plugin-gdpr-cookies": "^1.0.6",
@@ -34,7 +35,7 @@
     "gatsby-transformer-sharp": "^2.1.19",
     "node-sass": "^4.13.1",
     "prismjs": "^1.16.0",
-    "react": "^16.8.6",
+    "react": "^16.13.0",
     "react-cookie-banner": "^4.1.0",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
