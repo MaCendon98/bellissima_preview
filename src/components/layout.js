@@ -78,9 +78,9 @@ const Layout = props => {
               <li className="nav-menuitem" role="menuitem">
                 <Link to={`/philosophie`}>Philosophie</Link>
               </li>
-              <li className="nav-menuitem" role="menuitem">
+              {/* <li className="nav-menuitem" role="menuitem">
                 <Link to={`/behandlungen`}>Behandlungen</Link>
-              </li>
+              </li> */}
               {/* <li className="nav-menuitem" role="menuitem">
                 <Link to={`/schulungen`}>Schulungen</Link>
               </li> */}

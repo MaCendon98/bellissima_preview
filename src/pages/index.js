@@ -26,16 +26,19 @@ const BlogIndex = ({ data }, location) => {
           <h1 className="page-head-title">
             {data.site.siteMetadata.description}
           </h1>
-          <h2 className="page-head-subtitle">
+          {/* <h2 className="page-head-subtitle">
             Entspannen, Wohlfühlen, Genießen. <br />
             Bei uns bist du richtig.
+          </h2> */}
+          <h2 className="page-head-subtitle">
+            Unsere Webseite befindet sich zurzeit im Umbau.
           </h2>
           <a href="tel:+4951139080588" className="button primary large">
             Termin vereinbaren
           </a>
         </header>
       )}
-      <div className="post-feed">
+      {/* <div className="post-feed">
         {posts.map(({ node }) => {
           postCounter++;
           return (
@@ -47,9 +50,9 @@ const BlogIndex = ({ data }, location) => {
             />
           );
         })}
-      </div>
+      </div> */}
       <div className="page-intro post-content-body">
-        <h4>Herzlich Willkommen auf unserer Webseite</h4>
+        {/* <h4>Herzlich Willkommen auf unserer Webseite</h4>
         <p>
           Neue Technologien bereichern den Markt, um die Jugendlichkeit und
           Spannkraft der Haut zu erhalten. Die Welt der apparativen Kosmetik ist
@@ -62,7 +65,7 @@ const BlogIndex = ({ data }, location) => {
           Eindruck sollte perfekt sein: ob schöne Haut, gepflegte Hände und
           Nägel oder perfekter Wimpernaufschlag. All dies und mehr ermöglichen
           wir Ihnen in unserem Studio.
-        </p>
+        </p> */}
       </div>
     </Layout>
   );
