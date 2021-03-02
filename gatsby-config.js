@@ -133,7 +133,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: ``
+        trackingId: `UA-99728303-1`
       }
     },
     `gatsby-plugin-feed`,
@@ -141,7 +141,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: siteConfig.name,
-        short_name: siteConfig.shortName,
+        short_name: `bellissima`,
         start_url: siteConfig.prefix,
         background_color: `#ffffff`,
         theme_color: `#663399`,

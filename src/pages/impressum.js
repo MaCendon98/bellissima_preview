@@ -38,9 +38,7 @@ const Impressum = ({ data }, location) => {
             Telefon: <a href="tel:+4951139080588">051139080588 </a>
             <br />
             E-Mail:{" "}
-            <a href="mailto:info@bellissima-hannover.com">
-              info@bellissima-hannover.com
-            </a>
+            <a href="mailto:bellissima2006@web.de">bellissima2006@web.de</a>
           </p>
           <p>
             <strong>
